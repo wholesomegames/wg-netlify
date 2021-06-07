@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const buildPath = path.resolve(__dirname, 'dist')
 
@@ -76,6 +77,15 @@ module.exports = {
         inject: true,
         chunks: ['faq'],
         filename: 'faq/index.html'
+      }),
+
+      new CopyWebpackPlugin({
+        patterns: [
+          {
+            from: 'src/static',
+            to: ''
+          }
+        ]
       })
     ]
 
