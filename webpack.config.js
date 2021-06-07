@@ -36,8 +36,9 @@ module.exports = {
       {
         test: /\.s[ac]ss$/i,
         use: [
-          // Creates `style` nodes from JS strings
-          "style-loader",
+          MiniCssExtractPlugin.loader,
+          // // Creates `style` nodes from JS strings
+          // "style-loader",
           // Translates CSS into CommonJS
           "css-loader",
           // Compiles Sass to CSS
@@ -79,6 +80,8 @@ module.exports = {
         chunks: ['faq'],
         filename: 'faq/index.html'
       }),
+
+      new MiniCssExtractPlugin(),
 
       new CopyWebpackPlugin({
         patterns: [
