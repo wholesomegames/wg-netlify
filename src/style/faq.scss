@@ -1,6 +1,32 @@
+.faq {
+    .info-card {
+        max-width: 890px;
+        width: 75%;
+    }
+
+    @media (orientation: landscape) {
+        .info-card {
+            width: 50%;
+        }
+    }
+
+    .sm-icons {
+        padding-bottom: 86px;
+    }
+}
+
+.divider {
+    height: 1px;
+    background: #e1e1e1;
+    width: 66%;
+    margin: 0 auto;
+}
+
 .faq-block {
-    padding-top: 22%;
-    max-width: 90%;
+    //padding-top: 22%;
+    padding-top: 23px;
+    // max-width: 90%;
+    max-width: 88%;
     margin: 0 auto;
     width: 950px;
     margin-bottom: 20px;
@@ -26,7 +52,7 @@
     // }
 
     @media #{$medium-and-up} {
-        margin-bottom: 0;
+        margin-bottom: 60px;
 
         .question {
             text-align: right;
