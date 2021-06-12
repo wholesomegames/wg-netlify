@@ -1,0 +1,67 @@
+.yetee-block {
+    background: #66DFBF;
+
+}
+
+.yetee-row {
+    display: flex;
+
+    div {
+
+    }
+}
+
+.yetee-item {
+    flex: 1 1 0px;
+    /* margin: 10px; */
+    overflow: hidden;
+    border-radius: 0;
+}
+
+
+.yetee-logo {
+    max-width: 55%;
+    /* margin: 10px 0; */
+    margin-left: 5%;
+    margin-top: 10px;
+
+    svg {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.yetee-tag {
+    margin-left: 5%;
+    margin-bottom: 15px;
+    font-size: 20px;
+    margin-right: 2%;
+}
+
+.yetee-second {
+    margin-left: 5%;
+    font-weight: bold;
+    color: hsl(240deg 100% 24%);
+    margin-bottom: 20px;
+    margin-right: 2%;
+}
+
+.yetee-btn 
+{
+    border: 3px solid #3b48ed;
+    color: #3b48ed;
+    padding: calc(.5rem - 3px) 2rem;
+    font-size: 1.125rem;
+    line-height: 1.5em;
+    border-radius: 5px;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    transition: all .25s linear;
+    font-size: 14px;
+
+    &:hover {
+        color: white;
+        border-color: white;
+    }
+}
