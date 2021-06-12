@@ -124,17 +124,17 @@ $game-spacing-sm: 2px;
     }
 
     i {
-        font-size: 23px;
+        font-size: 19px;
     }
 
     .svg {
-        height: 23px;
+        height: 19px;
         width: auto;
     }
 
     svg {
         fill: white;
-        height: 23px;
+        height: 19px;
         width: auto;
     }
 }
@@ -155,6 +155,16 @@ $game-spacing-sm: 2px;
     
         &.double {
             grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    .platform-icons {
+        i {
+            font-size: 23px;
+        }
+
+        svg, .svg {
+            height: 23px;
         }
     }
 }
