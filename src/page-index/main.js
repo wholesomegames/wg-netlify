@@ -33,6 +33,9 @@ randomizeGames();
 */
 
 function randomizeGames() {
+    let container = document.getElementById('games');
+    container.style.display = 'none';
+
     let stack = Array.from(document.querySelectorAll('.game-container'));
     shuffle(stack);
     let rows = [];
@@ -64,9 +67,9 @@ function randomizeGames() {
         frag.appendChild(div);
     });
 
-    let container = document.getElementById('games');
     container.innerHTML = '';
     container.appendChild(frag);
+    container.style.display = 'block';
 }
 
 function getGroups(n) {
