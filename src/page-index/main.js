@@ -47,15 +47,24 @@ function randomizeGames() {
     let w2 = group[0];
     let w3 = group[1];
 
-    for(let i = 0; i < w2; i++) {
+    for (let i = 0; i < w2; i++) {
         rows.push(stack.splice(0, 2));
     }
 
-    for(let i = 0; i < w3; i++) {
+    for (let i = 0; i < w3; i++) {
         rows.push(stack.splice(0, 6));
     }
 
     shuffle(rows);
+
+    for (let i = 0; i < rows.length; i++) {
+        if (rows[i].length == 2) {
+            if (i != 0) {
+                [rows[i], rows[0]] = [rows[0], rows[i]];
+            }
+            break;
+        }
+    }
 
     let frag = document.createDocumentFragment();
     rows.forEach(row => {
@@ -76,9 +85,9 @@ function getGroups(n) {
     let gropus = [];
     let x2 = 0
 
-    while(x2 < n) {
+    while (x2 < n) {
         let x3 = n - x2
-        if(x3 % 3 == 0)
+        if (x3 % 3 == 0)
             groups.push([x2, x3]);
 
         x2 += 2
@@ -88,7 +97,7 @@ function getGroups(n) {
 }
 
 function shuffle(array) {
-    for(let i = array.length - 1; i > 0; i--) {
+    for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
         [array[i], array[j]] = [array[j], array[i]];
     }
