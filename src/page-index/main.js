@@ -42,7 +42,7 @@ function randomizeGames() {
 
     // let groups = getGroups(stack.length);
 
-    let group = [8, 20];
+    let group = [5, 11];
 
     let w2 = group[0];
     let w3 = group[1];
@@ -52,7 +52,7 @@ function randomizeGames() {
     }
 
     for(let i = 0; i < w3; i++) {
-        rows.push(stack.splice(0, 3));
+        rows.push(stack.splice(0, 6));
     }
 
     shuffle(rows);
