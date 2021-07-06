@@ -18,9 +18,10 @@ $game-spacing-sm: 2px;
     position: relative;
     width: 100%;
     margin-top: $game-spacing-sm;
+    background-color: #E0EFFD;
 
     h2 {
-        font-size: 36px;
+        font-size: 25px;
         line-height: normal;
         text-align: center;
         margin-bottom: 10px;
@@ -31,12 +32,14 @@ $game-spacing-sm: 2px;
 
 
 .games-tag {
-    font-size: 19px;
+    font-size: 18px;
+    margin-bottom: 31px;
     line-height: normal;
     text-align: center;
     color: #76768d;
+    color: #27395c;
     /* margin-top: -10px; */
-    margin-bottom: 31px;
+
     
 }
 
@@ -144,6 +147,15 @@ $game-spacing-sm: 2px;
 
     .games-block {
         margin-top: $game-spacing-lg;
+        h2 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+    }
+
+    .games-tag {
+        font-size: 19px;
+        margin-bottom: 31px;
     }
 
     .game-container {

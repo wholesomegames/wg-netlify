@@ -1,7 +1,14 @@
 .faq {
     .info-card {
         max-width: 890px;
-        width: 75%;
+        max-width: 950px;
+        width: 90%;
+    }
+
+    @media #{$medium-and-up} {
+        .info-card {
+            width: 75%;
+        }
     }
 
     @media (orientation: landscape) {
@@ -72,6 +79,7 @@
         /* grid-template-columns: 0.95fr 1.05fr; */
     
         grid-gap: 0 42px;
+        grid-gap: 0 52px
     }
 
 
