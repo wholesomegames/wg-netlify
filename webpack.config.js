@@ -11,6 +11,7 @@ module.exports = {
   entry: {
     index: './src/page-index/main.js',
     faq: './src/page-faq/main.js',
+    direct: './src/page-direct/main.js',
   },
 
   devtool: 'inline-source-map',
@@ -80,6 +81,13 @@ module.exports = {
         chunks: ['faq'],
         filename: 'faq/index.html'
       }),
+      new HtmlWebpackPlugin({
+        template: './src/page-direct/tmpl.html',
+        inject: true,
+        chunks: ['direct'],
+        filename: 'direct/index.html'
+      }),
+
 
       new MiniCssExtractPlugin(),
 

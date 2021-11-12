@@ -129,7 +129,23 @@ body {
     }
 }
 
+
+.snack-logo {
+
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    transform: translate(0, -37%);
+
+    img {
+        display: block;
+        min-width: 350px;
+        width: 77%;
+    }
+}
+
 .info {
+    z-index: 100;
     padding-top: 22%;
     text-align: center;
     margin: 20px;
